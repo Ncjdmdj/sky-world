@@ -1,0 +1,1 @@
+សូមទាញយក Font KantumruyPro-Regular.ttf ពី Google Fonts រួចដាក់ក្នុងថត static/fonts/ នេះ ដើម្បីឱ្យម៉ាស៊ីនបង្កើត PDF (ReportLab) បង្ហាញអក្សរខ្មែរបានច្បាស់ល្អ។
