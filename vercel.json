@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/code_artifact.html" }
+    { "source": "/", "destination": "/templates/code_artifact.html" },
+    { "source": "/admin", "destination": "/templates/admin.html" },
+    { "source": "/admin.html", "destination": "/templates/admin.html" },
+    { "source": "/code_artifact.html", "destination": "/templates/code_artifact.html" }
   ]
 }

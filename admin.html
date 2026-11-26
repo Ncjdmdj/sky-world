@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="km" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>គម្រោងដីឡូត៍ ស្កាយវើលដ៏ រេសុីដេន | ទេសភាពមាត់ទន្លេ & ប្លង់រឹងស្របច្បាប់</title>
+    <link rel="icon" type="image/gif" href="Gemini_Generated_Gif_vdurstvdurstvdur.gif">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Khmer Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Moul&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Kantumruy Pro"', '"Battambang"', 'sans-serif'],
+                        moul: ['"Moul"', 'serif'],
+                        battambang: ['"Battambang"', 'sans-serif'],
+                    },
+                    colors: {
+                        royal: {
+                            navy: '#0B192C',
+                            blue: '#1E3E62',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            goldDark: '#AA820A',
+                            crimson: '#9B1C1C'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Kantumruy Pro', 'Battambang', sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+        }
+        .font-moul {
+            font-family: 'Moul', serif;
+            line-height: 1.6;
+        }
+        /* Custom subtle Khmer pattern overlay */
+        .khmer-pattern {
+            background-image: radial-gradient(#D4AF37 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B192C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+        /* Plot pulse effect for available lots */
+        @keyframes softGlow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+            50% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+        }
+        .plot-available:hover {
+            animation: softGlow 1.5s infinite;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-royal-gold selection:text-royal-navy">
+
+    <!-- ==================== TOP NAVIGATION BAR ==================== -->
+    <header class="sticky top-0 z-50 bg-royal-navy/95 backdrop-blur-md border-b border-royal-gold/30 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="h-12 sm:h-14 w-auto rounded-xl overflow-hidden border border-royal-gold/40 shadow-md group-hover:scale-105 transition bg-[#152036] shrink-0">
+                        <img src="Gemini_Generated_Gif_vdurstvdurstvdur.gif" alt="Skyworld Residence Logo" class="h-full w-auto object-cover block">
+                    </div>
+                    <div>
+                        <span id="site-brand-title" class="font-moul text-base sm:text-lg text-royal-gold block tracking-wide">ស្កាយវើលដ៏​ រេសុីដេន</span>
+                        <span id="site-brand-subtitle" class="text-xs text-slate-300 block -mt-1">គម្រោងអភិវឌ្ឍន៍ដីឡូត៍តំបន់ សេដ្ឋកិច្ច ពិសេស</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
+                    <a href="#home" class="text-royal-gold hover:text-white transition py-2">ទំព័រដើម</a>
+                    <a href="#projects" class="text-slate-200 hover:text-royal-gold transition py-2">គម្រោងដីឡូត៍</a>
+                    <a href="#masterplan" class="text-slate-200 hover:text-royal-gold transition py-2">ប្លង់ដី & តម្លៃ</a>
+                    <a href="#gallery" class="text-slate-200 hover:text-royal-gold transition py-2">រូបភាព & វីដេអូ</a>
+                    <a href="#location" class="text-slate-200 hover:text-royal-gold transition py-2">ទីតាំងគម្រោង</a>
+                    <a href="#contact" class="text-slate-200 hover:text-royal-gold transition py-2">ទំនាក់ទំនង</a>
+                    <a href="skyworld_admin_full.html" class="px-3 py-1.5 rounded-lg bg-white/10 border border-royal-gold/40 text-royal-goldLight hover:bg-royal-gold hover:text-royal-navy font-semibold transition">
+                        <i class="fa-solid fa-user-shield mr-1"></i>Admin Panel
+                    </a>
+                </nav>
+
+                <!-- Action Buttons (No Login Required) -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="tel:012888999" class="px-3.5 py-2 rounded-xl border border-royal-gold/50 text-royal-gold hover:bg-royal-gold/10 text-sm font-semibold transition flex items-center gap-2">
+                        <i class="fa-solid fa-phone-volume animate-pulse"></i>
+                        <span>012 888 999</span>
+                    </a>
+                    <a href="#booking" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-royal-gold to-amber-500 text-royal-navy font-bold text-sm shadow-md hover:shadow-royal-gold/30 hover:brightness-105 transition flex items-center gap-2">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <span>កក់ដីឥឡូវនេះ</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-royal-gold hover:bg-white/10 focus:outline-none" aria-label="បើកម៉ឺនុយ">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-royal-navy border-t border-royal-gold/20 px-4 pt-3 pb-5 space-y-2">
+            <a href="#home" class="block px-3 py-2.5 rounded-lg text-royal-gold font-semibold bg-white/5">🏠 ទំព័រដើម</a>
+            <a href="#projects" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-white/5">🏘️ គម្រោងដីឡូត៍</a>
+            <a href="#masterplan" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-white/5">📐 ប្លង់ដីឡូត៍ តម្លៃ និងទំហំ</a>
+            <a href="#gallery" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-white/5">📸 រូបភាព និងវីដេអូគម្រោង</a>
+            <a href="#location" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-white/5">📍 ទីតាំង Google Maps</a>
+            <a href="#contact" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-white/5">📞 ព័ត៌មានទំនាក់ទំនង</a>
+            <a href="skyworld_admin_full.html" class="block px-3 py-2.5 rounded-lg text-royal-gold font-semibold bg-royal-gold/10 border border-royal-gold/30">🛡️ Admin Panel (គ្រប់គ្រងដី & រូបភាព)</a>
+            <div class="pt-2 flex gap-2">
+                <a href="#booking" class="flex-1 text-center py-3 rounded-xl bg-royal-gold text-royal-navy font-bold text-sm">
+                    📝 ស្នើសុំកក់ដីភ្លាមៗ
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION WITH KHMER BOAT RACING ANIMATION ==================== -->
+    <section id="home" class="relative w-full overflow-hidden bg-royal-navy">
+        <!-- Interactive HTML5 Canvas for Khmer Boat Racing (ប្រណាំងទូកងមុខព្រះបរមរាជវាំង) -->
+        <div class="relative w-full h-[540px] sm:h-[600px] lg:h-[650px]">
+            <canvas id="boatRaceCanvas" class="w-full h-full block"></canvas>
+
+            <!-- Top-Right Animation Controls Badge -->
+            <div class="absolute top-4 right-4 z-20 flex items-center gap-2 bg-royal-navy/80 backdrop-blur-md border border-royal-gold/40 px-3 py-1.5 rounded-full text-xs text-white shadow-lg">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>ពិធីបុណ្យអុំទូក • មាត់ទន្លេចតុមុខ 🇰🇭</span>
+                <button id="toggleRaceSpeed" class="ml-1 px-2 py-0.5 rounded-full bg-royal-gold text-royal-navy font-bold hover:bg-amber-400 transition" title="បង្កើនល្បឿនទូក">
+                    <i class="fa-solid fa-forward"></i> ល្បឿន
+                </button>
+            </div>
+
+            <!-- Hero Overlay Content (Positioned cleanly so Royal Palace & Boats remain clearly visible) -->
+            <div class="absolute inset-0 bg-gradient-to-r from-royal-navy/85 via-royal-navy/45 to-transparent pointer-events-none flex items-center">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pointer-events-auto">
+                    <div class="max-w-2xl space-y-4 sm:space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-royal-gold/20 border border-royal-gold/50 text-royal-goldLight text-xs sm:text-sm font-medium backdrop-blur-sm">
+                            <span id="hero-badge-text">🇰🇭 បើកលក់គម្រោងថ្មី • មិនចាំបាច់ Login ចូលមើលបានភ្លាម</span>
+                        </div>
+
+                        <h1 id="hero-main-title" class="font-moul text-2xl sm:text-4xl lg:text-[40px] text-white drop-shadow-md leading-relaxed">គម្រោងដីឡូត៍ <span class="text-royal-gold">ស្កាយវើលដ៏​</span></h1>
+
+                        <p id="hero-description" class="text-slate-100 text-sm sm:text-lg leading-relaxed drop-shadow">ទីតាំងមាសជាប់មាត់ទន្លេ និងផ្លូវរដ្ឋ ៣០ម៉ែត្រ ទេសភាពស្រស់ត្រកាល ហ៊ុមព័ទ្ធដោយហេដ្ឋារចនាសម្ព័ន្ធទំនើប ផ្លូវបេតុង ប្រព័ន្ធទឹកភ្លើងរដ្ឋ ១០០% និងកាត់ប្លង់រឹងជូនស្របច្បាប់។</p>
+
+                        <!-- Key Highlights Pills -->
+                        <div class="flex flex-wrap gap-2 sm:gap-3 pt-1">
+                            <span class="px-3 py-1.5 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm">
+                                💰 តម្លៃចាប់ពី <strong id="hero-start-price" class="text-royal-gold">$9,800</strong>
+                            </span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm">
+                                📏 ទំហំ <strong id="hero-sizes">5m×20m & 10m×20m</strong>
+                            </span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm">
+                                🏦 បង់រំលស់ <strong id="hero-installment" class="text-emerald-300">0% ការប្រាក់</strong>
+                            </span>
+                        </div>
+
+                        <!-- Primary Call-to-Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <a href="#masterplan" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-royal-gold to-amber-500 text-royal-navy font-bold text-sm sm:text-base shadow-xl hover:scale-[1.02] transition flex items-center gap-2">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span>មើលប្លង់ដីឡូត៍ & តម្លៃ</span>
+                            </a>
+                            <a href="#booking" class="px-6 py-3.5 rounded-xl bg-royal-navy/80 hover:bg-royal-navy text-white border-2 border-royal-gold font-bold text-sm sm:text-base backdrop-blur-md transition flex items-center gap-2">
+                                <i class="fa-solid fa-pen-to-square text-royal-gold"></i>
+                                <span>ស្នើសុំកក់ដីឥឡូវនេះ</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Quick Summary Bar -->
+        <div class="bg-gradient-to-r from-royal-navy via-royal-blue to-royal-navy border-t border-royal-gold/40 py-4 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-2">
+                    <div class="text-royal-gold font-bold text-xl sm:text-2xl" id="stat-total-count">៣៦ ឡូត៍</div>
+                    <div class="text-xs sm:text-sm text-slate-300">ប្លង់មេស្តង់ដារអភិវឌ្ឍន៍</div>
+                </div>
+                <div class="p-2 border-l border-white/10">
+                    <div class="text-emerald-400 font-bold text-xl sm:text-2xl" id="stat-available-count">២៤ ឡូត៍ទំនេរ</div>
+                    <div class="text-xs sm:text-sm text-slate-300">អាចជ្រើសរើសកក់បានភ្លាម</div>
+                </div>
+                <div class="p-2 md:border-l border-white/10">
+                    <div id="stat-road-width" class="text-royal-gold font-bold text-xl sm:text-2xl">១៥ ម៉ែត្រ</div>
+                    <div class="text-xs sm:text-sm text-slate-300">ផ្លូវបេតុងមេក្នុងគម្រោង</div>
+                </div>
+                <div class="p-2 border-l border-white/10">
+                    <div id="stat-title-deed" class="text-amber-300 font-bold text-xl sm:text-2xl">ប្លង់រឹង ១០០%</div>
+                    <div class="text-xs sm:text-sm text-slate-300">ធានាសុវត្ថិភាពផ្លូវច្បាប់</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 1: LAND DEVELOPMENT PROJECTS (គម្រោងដីឡូត៍) ==================== -->
+    <section id="projects" class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-royal-goldDark font-bold text-sm uppercase tracking-wider">🏠 គម្រោងអភិវឌ្ឍន៍របស់យើង</span>
+                <h2 class="font-moul text-2xl sm:text-3xl text-royal-navy mt-2">ជម្រើសគម្រោងដីឡូត៍សក្តានុពលខ្ពស់</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    យើងផ្តល់ជូនដីឡូត៍ដែលមានការរៀបចំហេដ្ឋារចនាសម្ព័ន្ធរួចរាល់ ងាយស្រួលសម្រាប់សាងសង់លំនៅឋាន អាជីវកម្ម ឬទិញទុកវិនិយោគយកប្រាក់ចំណេញខ្ពស់។
+                </p>
+            </div>
+
+            <!-- 3 Project Zones Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Zone A Card -->
+                <div class="rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden shadow-sm hover:shadow-xl transition group flex flex-col">
+                    <div class="relative h-52 bg-gradient-to-br from-royal-navy to-royal-blue p-6 flex flex-col justify-between text-white overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 text-white/10 text-8xl">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <div class="flex justify-between items-start z-10">
+                            <span class="px-3 py-1 rounded-full bg-royal-gold text-royal-navy font-bold text-xs">គម្រោង A • ទេសភាពមាត់ទន្លេ</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 border border-emerald-400 text-emerald-300 text-xs font-semibold">ពេញនិយម</span>
+                        </div>
+                        <div class="z-10">
+                            <h3 class="text-xl font-bold text-white">ដីឡូត៍តំបន & សេដ្ឋកិច្ច​ ពិសេស</h3>
+                            <p class="text-royal-goldLight text-sm mt-1">ទំហំ 10m × 20m (200 m²)</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <ul class="space-y-2.5 text-sm text-slate-700">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> ជាប់សួនច្បារមាត់ទន្លេ ខ្យល់អាកាសបរិសុទ្ធ</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> ផ្លូវបេតុងមុខដីទំហំ ១៥ម៉ែត្រ</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> ស័ក្តិសមសម្រាប់វីឡាទោល ឬផ្ទះលំហែ</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-tag text-royal-goldDark"></i> តម្លៃពិសេស៖ <strong class="text-royal-navy text-base">$18,500 - $22,000</strong></li>
+                        </ul>
+                        <a href="#masterplan" onclick="filterPlotsByZone('A')" class="w-full py-3 rounded-xl bg-royal-navy hover:bg-royal-blue text-white font-semibold text-sm text-center transition">
+                            មើលឡូត៍ក្នុងតំបន់ A <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Zone B Card -->
+                <div class="rounded-2xl border-2 border-royal-gold bg-white overflow-hidden shadow-md hover:shadow-xl transition group flex flex-col relative">
+                    <div class="relative h-52 bg-gradient-to-br from-amber-700 via-royal-goldDark to-royal-navy p-6 flex flex-col justify-between text-white overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 text-white/10 text-8xl">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <div class="flex justify-between items-start z-10">
+                            <span class="px-3 py-1 rounded-full bg-white text-royal-navy font-bold text-xs">គម្រោង B • ជាប់ផ្លូវមេ 15m</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-amber-300 text-royal-navy text-xs font-bold">សម្រាប់អាជីវកម្ម</span>
+                        </div>
+                        <div class="z-10">
+                            <h3 class="text-xl font-bold text-white">ដីឡូត៍អាជីវកម្ម & ផ្ទះល្វែង</h3>
+                            <p class="text-amber-100 text-sm mt-1">ទំហំ 5m × 20m (100 m²)</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <ul class="space-y-2.5 text-sm text-slate-700">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> ជាប់ផ្លូវបេតុងធំ ១៥ម៉ែត្រ តភ្ជាប់ផ្លូវជាតិ</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> ងាយស្រួលបើកហាង ផ្សារម៉ាត ឬសង់ផ្ទះជួល</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> បង្គោលភ្លើងបំភ្លឺផ្លូវ និងប្រព័ន្ធលូរួចរាល់</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-tag text-royal-goldDark"></i> តម្លៃពិសេស៖ <strong class="text-royal-navy text-base">$12,500 - $14,000</strong></li>
+                        </ul>
+                        <a href="#masterplan" onclick="filterPlotsByZone('B')" class="w-full py-3 rounded-xl bg-gradient-to-r from-royal-gold to-amber-500 text-royal-navy font-bold text-sm text-center shadow hover:brightness-105 transition">
+                            មើលឡូត៍ក្នុងតំបន់ B <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Zone C Card -->
+                <div class="rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden shadow-sm hover:shadow-xl transition group flex flex-col">
+                    <div class="relative h-52 bg-gradient-to-br from-emerald-900 to-royal-navy p-6 flex flex-col justify-between text-white overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 text-white/10 text-8xl">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <div class="flex justify-between items-start z-10">
+                            <span class="px-3 py-1 rounded-full bg-emerald-400 text-royal-navy font-bold text-xs">គម្រោង C • លំនៅឋានស្តង់ដារ</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-white/15 text-white text-xs font-semibold">តម្លៃសមរម្យ</span>
+                        </div>
+                        <div class="z-10">
+                            <h3 class="text-xl font-bold text-white">ដីឡូត៍លំនៅឋានបង់រំលស់</h3>
+                            <p class="text-emerald-200 text-sm mt-1">ទំហំ 5m × 20m (100 m²)</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <ul class="space-y-2.5 text-sm text-slate-700">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> ផ្លូវបេតុងក្នុងគម្រោងទំហំ ១០ម៉ែត្រ</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> បង់មុនត្រឹម $1,500 រំលស់ $180/ខែ</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> មានប្រជាជនរស់នៅកុះករជុំវិញគម្រោង</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-tag text-royal-goldDark"></i> តម្លៃពិសេស៖ <strong class="text-royal-navy text-base">$9,800 - $11,200</strong></li>
+                        </ul>
+                        <a href="#masterplan" onclick="filterPlotsByZone('C')" class="w-full py-3 rounded-xl bg-royal-navy hover:bg-royal-blue text-white font-semibold text-sm text-center transition">
+                            មើលឡូត៍ក្នុងតំបន់ C <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 2: INTERACTIVE MASTER PLAN (ប្លង់ដីឡូត៍ តម្លៃ ទំហំ & ស្ថានភាព) ==================== -->
+    <section id="masterplan" class="py-16 bg-slate-100 khmer-pattern border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-royal-goldDark font-bold text-sm uppercase tracking-wider">📐 ផែនទីប្លង់មេគម្រោង & តារាងតម្លៃ</span>
+                <h2 class="font-moul text-2xl sm:text-3xl text-royal-navy mt-2">ប្លង់ដីឡូត៍ តម្លៃ និងស្ថានភាពជាក់ស្តែង</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    សូមចុចលើ <strong>លេខឡូត៍នីមួយៗ</strong> នៅលើប្លង់ខាងក្រោម ដើម្បីពិនិត្យមើល <strong>ទំហំដី តម្លៃលម្អិត ជម្រើសបង់ប្រាក់</strong> និងចុចកក់ដីភ្លាមៗ។
+                </p>
+            </div>
+
+            <!-- Filter Controls & Status Legend -->
+            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 mb-8">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                    <!-- Filter Buttons -->
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="text-sm font-bold text-royal-navy mr-1"><i class="fa-solid fa-filter text-royal-goldDark"></i> តម្រង៖</span>
+                        <button onclick="setPlotFilter('all')" id="filter-all" class="filter-btn active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-royal-navy text-white transition">
+                            ទាំងអស់ (<span id="filter-all-count">36</span>)
+                        </button>
+                        <button onclick="setPlotFilter('available')" id="filter-available" class="filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition">
+                            🟢 ទំនេរ (Available)
+                        </button>
+                        <button onclick="setPlotFilter('reserved')" id="filter-reserved" class="filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-100 transition">
+                            🟡 បានកក់ (Reserved)
+                        </button>
+                        <button onclick="setPlotFilter('sold')" id="filter-sold" class="filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 transition">
+                            🔴 លក់រួច (Sold)
+                        </button>
+                    </div>
+
+                    <!-- Status Color Legend -->
+                    <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 h-4 rounded bg-emerald-500 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-slate-700">ទំនេរ (អាចកក់បាន)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 h-4 rounded bg-amber-400 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-slate-700">បានកក់ប្រាក់</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 h-4 rounded bg-rose-500 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-slate-700">លក់រួចរាល់</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Master Plan Layout Grid + Selected Plot Inspector -->
+            <div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+                <!-- Left 8 Columns: Visual Master Plan Map -->
+                <div class="xl:col-span-8 bg-white rounded-2xl p-4 sm:p-6 shadow-md border border-slate-200 overflow-x-auto">
+                    <div class="min-w-[620px]">
+                        <!-- Top Riverfront Banner in Master Plan -->
+                        <div class="rounded-xl bg-gradient-to-r from-sky-700 via-blue-600 to-sky-700 text-white p-3 mb-4 flex items-center justify-between shadow-inner">
+                            <div class="flex items-center gap-2 text-sm font-bold">
+                                <i class="fa-solid fa-water text-sky-200"></i>
+                                <span>មាត់ទន្លេធម្មជាតិ & សួនច្បារលំហែកាយមាត់ទន្លេ (Riverfront Park)</span>
+                            </div>
+                            <span class="text-xs bg-white/20 px-2.5 py-1 rounded-full">ទិសខាងកើត 🧭</span>
+                        </div>
+
+                        <!-- ZONE A: Riverfront Premium Plots (10m x 20m) -->
+                        <div class="mb-2 flex justify-between items-center text-xs font-bold text-royal-navy">
+                            <span>តំបន់ A៖ ដីឡូត៍មាត់ទន្លេ (ទំហំ 10m × 20m = 200m²)</span>
+                            <span class="text-royal-goldDark">A01 - A12</span>
+                        </div>
+                        <div id="grid-zone-A" class="grid grid-cols-6 gap-2.5 mb-4">
+                            <!-- Populated by JS -->
+                        </div>
+
+                        <!-- Main Concrete Road 15m -->
+                        <div class="my-4 py-2.5 px-4 rounded-xl bg-slate-700 text-white flex items-center justify-between border-y-2 border-dashed border-amber-300/70">
+                            <span class="text-xs font-bold tracking-wide"><i class="fa-solid fa-road text-amber-300 mr-1.5"></i> ផ្លូវបេតុងមេទំហំ ១៥ ម៉ែត្រ (តភ្ជាប់ទៅផ្លូវជាតិ)</span>
+                            <span class="text-xs text-slate-300">ប្រព័ន្ធលូ & បង្គោលភ្លើងរដ្ឋ</span>
+                        </div>
+
+                        <!-- ZONE B: Commercial Plots (5m x 20m) -->
+                        <div class="mb-2 flex justify-between items-center text-xs font-bold text-royal-navy">
+                            <span>តំបន់ B៖ ដីឡូត៍អាជីវកម្មជាប់ផ្លូវមេ (ទំហំ 5m × 20m = 100m²)</span>
+                            <span class="text-royal-goldDark">B01 - B12</span>
+                        </div>
+                        <div id="grid-zone-B" class="grid grid-cols-6 gap-2.5 mb-4">
+                            <!-- Populated by JS -->
+                        </div>
+
+                        <!-- Secondary Concrete Road 10m -->
+                        <div class="my-4 py-2 px-4 rounded-xl bg-slate-600 text-white flex items-center justify-between border-y border-dashed border-white/40">
+                            <span class="text-xs font-semibold"><i class="fa-solid fa-road text-slate-200 mr-1.5"></i> ផ្លូវបេតុងក្នុងគម្រោងទំហំ ១០ ម៉ែត្រ</span>
+                            <span class="text-xs text-slate-300">ផ្លូវភ្លោះងាយស្រួលចេញចូល</span>
+                        </div>
+
+                        <!-- ZONE C: Residential Plots (5m x 20m) -->
+                        <div class="mb-2 flex justify-between items-center text-xs font-bold text-royal-navy">
+                            <span>តំបន់ C៖ ដីឡូត៍លំនៅឋាន (ទំហំ 5m × 20m = 100m²)</span>
+                            <span class="text-royal-goldDark">C01 - C12</span>
+                        </div>
+                        <div id="grid-zone-C" class="grid grid-cols-6 gap-2.5">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 4 Columns: Live Plot Details & Instant Booking Card -->
+                <div class="xl:col-span-4 bg-white rounded-2xl p-6 shadow-lg border-2 border-royal-gold/50 sticky top-24">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
+                        <div>
+                            <span class="text-xs font-bold text-royal-goldDark uppercase">ព័ត៌មានលម្អិតឡូត៍ដី</span>
+                            <h3 id="detail-plot-title" class="text-2xl font-bold text-royal-navy mt-0.5">ឡូត៍លេខ A01</h3>
+                        </div>
+                        <span id="detail-plot-badge" class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+                            🟢 ទំនេរ
+                        </span>
+                    </div>
+
+                    <!-- Plot Specifications Table -->
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between py-2 border-b border-slate-100">
+                            <span class="text-slate-500"><i class="fa-solid fa-layer-group w-5 text-royal-goldDark"></i> ប្រភេទតំបន់៖</span>
+                            <span id="detail-plot-zone" class="font-bold text-royal-navy">តំបន់ A (មាត់ទន្លេ)</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-slate-100">
+                            <span class="text-slate-500"><i class="fa-solid fa-ruler-combined w-5 text-royal-goldDark"></i> ទំហំដី (ក្បាល×បណ្តោយ)៖</span>
+                            <span id="detail-plot-size" class="font-bold text-royal-navy">10m × 20m (200 m²)</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-slate-100">
+                            <span class="text-slate-500"><i class="fa-solid fa-compass w-5 text-royal-goldDark"></i> បែរមុខទៅទិស៖</span>
+                            <span id="detail-plot-facing" class="font-semibold text-slate-800">ទិសខាងកើត (មាត់ទន្លេ)</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-slate-100">
+                            <span class="text-slate-500"><i class="fa-solid fa-file-contract w-5 text-royal-goldDark"></i> ប្រភេទប្លង់៖</span>
+                            <span class="font-semibold text-emerald-700">ប្លង់រឹងស្របច្បាប់ ១០០%</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 mt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-slate-600 font-medium">💰 តម្លៃសរុប៖</span>
+                                <span id="detail-plot-price" class="text-2xl font-extrabold text-royal-navy">$19,500</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-2 pt-2 border-t border-slate-200 text-xs">
+                                <span class="text-slate-500">បង់រំលស់ប្រចាំខែ (0% ការប្រាក់)៖</span>
+                                <span id="detail-plot-installment" class="font-bold text-royal-goldDark">$325 / ខែ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons for Selected Plot -->
+                    <div class="mt-6 space-y-2.5">
+                        <button id="detail-book-btn" onclick="selectPlotForBooking()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-royal-gold to-amber-500 text-royal-navy font-bold text-sm sm:text-base shadow-md hover:brightness-105 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span>ស្នើសុំកក់ឡូត៍នេះឥឡូវនេះ</span>
+                        </button>
+                        <a href="https://t.me/" target="_blank" rel="noopener" class="w-full py-3 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200 font-semibold text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-telegram text-lg"></i>
+                            <span>សួរព័ត៌មានបន្ថែមតាម Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 3: PROJECT GALLERY & VIDEO SHOWCASE (រូបភាព និងវីដេអូគម្រោង) ==================== -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <span class="text-royal-goldDark font-bold text-sm uppercase tracking-wider">📸 ទិដ្ឋភាពជាក់ស្តែង & វីដេអូ</span>
+                    <h2 class="font-moul text-2xl sm:text-3xl text-royal-navy mt-2">រូបភាព និងវីដេអូគម្រោង</h2>
+                </div>
+                <!-- Gallery Filter Tabs -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="switchGalleryTab('all')" class="gal-tab px-4 py-2 rounded-xl text-sm font-bold bg-royal-navy text-white transition" data-tab="all">ទាំងអស់</button>
+                    <button onclick="switchGalleryTab('site')" class="gal-tab px-4 py-2 rounded-xl text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-tab="site">ការដ្ឋានជាក់ស្តែង</button>
+                    <button onclick="switchGalleryTab('video')" class="gal-tab px-4 py-2 rounded-xl text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-tab="video">វីដេអូគម្រោង</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Featured Video Card (Spans 2 columns on large screens) -->
+                <div class="gallery-item lg:col-span-2 rounded-2xl overflow-hidden bg-royal-navy shadow-lg border border-slate-200 group relative" data-category="video">
+                    <div class="relative aspect-video bg-slate-900 flex items-center justify-center overflow-hidden">
+                        <!-- Custom Interactive Video Preview / Simulated Drone Flyover Canvas -->
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
+                             onerror="this.src='https://placehold.co/1200x675/0B192C/D4AF37?text=វីដេអូបង្ហាញគម្រោងដីឡូត៍+មរតកខ្មែរ'"
+                             alt="វីដេអូបង្ហាញគម្រោងដីឡូត៍"
+                             class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-royal-navy via-royal-navy/30 to-transparent"></div>
+
+                        <!-- Play Button Overlay -->
+                        <button onclick="openVideoModal()" class="absolute z-10 w-20 h-20 rounded-full bg-royal-gold text-royal-navy flex items-center justify-center shadow-2xl hover:scale-110 transition group-hover:bg-amber-400" aria-label="ចាក់វីដេអូគម្រោង">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </button>
+
+                        <div class="absolute bottom-4 left-4 right-4 text-white flex flex-wrap justify-between items-end gap-2">
+                            <div>
+                                <span class="px-2.5 py-1 rounded-md bg-rose-600 text-white text-xs font-bold uppercase">🎬 វីដេអូ Drone 4K</span>
+                                <h3 class="text-lg sm:text-xl font-bold mt-1.5">ទិដ្ឋភាពពីលើអាកាសនៃគម្រោងដីឡូត៍ មរតកខ្មែរ</h3>
+                                <p class="text-xs sm:text-sm text-slate-300">បង្ហាញផ្លូវបេតុង ១៥ម៉ែត្រ ប្រព័ន្ធទឹកភ្លើង និងទេសភាពជាប់មាត់ទន្លេ</p>
+                            </div>
+                            <span class="text-xs bg-black/50 px-3 py-1 rounded-full border border-white/20">រយៈពេល 02:45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 1: Concrete Road Infrastructure -->
+                <div class="gallery-item rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 group cursor-pointer" data-category="site" onclick="openImageModal(this)">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.src='https://placehold.co/800x600/1E3E62/FFFFFF?text=ផ្លូវបេតុង+១៥ម៉ែត្រ'"
+                             alt="ផ្លូវបេតុងក្នុងគម្រោង"
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-royal-navy/80 text-royal-gold text-xs font-semibold backdrop-blur-sm">ការដ្ឋានជាក់ស្តែង</span>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-royal-navy">ការចាក់ផ្លូវបេតុងមេទំហំ ១៥ម៉ែត្រ</h4>
+                        <p class="text-xs text-slate-500 mt-1">សម្រេចបាន ១០០% ព្រមទាំងដាក់ប្រព័ន្ធលូរំដោះទឹករួចរាល់</p>
+                    </div>
+                </div>
+
+                <!-- Photo 2: Riverside Park -->
+                <div class="gallery-item rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 group cursor-pointer" data-category="site" onclick="openImageModal(this)">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.src='https://placehold.co/800x600/0B192C/D4AF37?text=ទេសភាពមាត់ទន្លេ'"
+                             alt="ទេសភាពមាត់ទន្លេ"
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-emerald-700/90 text-white text-xs font-semibold">ទេសភាពមាត់ទន្លេ</span>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-royal-navy">សួនច្បារ និងច្រាំងទន្លេធម្មជាតិ</h4>
+                        <p class="text-xs text-slate-500 mt-1">បរិយាកាសស្រស់ស្រាយ ល្អបំផុតសម្រាប់ការរស់នៅបែបធម្មជាតិ</p>
+                    </div>
+                </div>
+
+                <!-- Photo 3: Boundary Markers & Electricity -->
+                <div class="gallery-item rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 group cursor-pointer" data-category="site" onclick="openImageModal(this)">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.src='https://placehold.co/800x600/1E3E62/F3E5AB?text=បោះបង្គោលព្រំដី+និងភ្លើងរដ្ឋ'"
+                             alt="ការបោះបង្គោលព្រំដី និងតបណ្តាញអគ្គិសនី"
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-royal-navy/80 text-royal-gold text-xs font-semibold">ហេដ្ឋារចនាសម្ព័ន្ធ</span>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-royal-navy">បោះបង្គោលព្រំដី និងបណ្តាញទឹកភ្លើងរដ្ឋ</h4>
+                        <p class="text-xs text-slate-500 mt-1">ឡូត៍នីមួយៗមានបោះបង្គោលព្រំច្បាស់លាស់ និងអាចសាងសង់បានភ្លាម</p>
+                    </div>
+                </div>
+
+                <!-- Photo 4: Residential Community -->
+                <div class="gallery-item rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 group cursor-pointer" data-category="site" onclick="openImageModal(this)">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.src='https://placehold.co/800x600/0B192C/FFFFFF?text=គំរូផ្ទះវីឡាទោល'"
+                             alt="គំរូលំនៅឋានក្នុងគម្រោង"
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-amber-600/90 text-white text-xs font-semibold">គំរូលំនៅឋាន</span>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-royal-navy">គំរូវីឡាទោល និងផ្ទះអាជីវកម្ម</h4>
+                        <p class="text-xs text-slate-500 mt-1">អតិថិជនអាចសាងសង់តាមម៉ូតដែលពេញចិត្តដោយសេរី</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 4: PROJECT LOCATION & GOOGLE MAPS (ផែនទីទីតាំងគម្រោង) ==================== -->
+    <section id="location" class="py-16 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-royal-goldDark font-bold text-sm uppercase tracking-wider">🗺️ ផែនទីទីតាំងគម្រោង & Google Maps</span>
+                <h2 class="font-moul text-2xl sm:text-3xl text-royal-navy mt-2">ទីតាំងភូមិសាស្ត្រអំណោយផលខ្លាំង</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    ស្ថិតនៅតំបន់កំពុងអភិវឌ្ឍន៍ខ្លាំង ត្រឹមតែ ១៥នាទី ពីរាជធានីភ្នំពេញ ជិតស្ពានឆ្លងទន្លេ ផ្សារទំនើប សាលារៀន និងមន្ទីរពេទ្យ។
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Left 5 Columns: Surrounding Landmarks & Location Schematic -->
+                <div class="lg:col-span-5 bg-white rounded-2xl p-6 shadow-md border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-royal-navy border-b border-slate-100 pb-3 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-map-signs text-royal-goldDark"></i>
+                            <span>ចម្ងាយពីទីតាំងសំខាន់ៗជុំវិញគម្រោង</span>
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="w-11 h-11 rounded-xl bg-royal-navy text-royal-gold flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-bridge-water"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-royal-navy">ស្ពានមិត្តភាព & ផ្លូវជាតិលេខ ៦A</h4>
+                                    <p class="text-xs text-slate-500">ចម្ងាយត្រឹមតែ ៣.៥ គីឡូម៉ែត្រ (៥ នាទី)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-royal-navy">ផ្សារទំនើប និងមជ្ឈមណ្ឌលពាណិជ្ជកម្ម</h4>
+                                    <p class="text-xs text-slate-500">ចម្ងាយ ២ គីឡូម៉ែត្រ (៣ នាទី)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-school"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-royal-navy">សាលារៀនអន្តរជាតិ និងមន្ទីរពេទ្យបង្អែក</h4>
+                                    <p class="text-xs text-slate-500">ចម្ងាយ ១.៨ គីឡូម៉ែត្រ (៣ នាទី)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-gopuram"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-royal-navy">មាត់ទន្លេចតុមុខ & ព្រះបរមរាជវាំង</h4>
+                                    <p class="text-xs text-slate-500">ធ្វើដំណើរតាមផ្លូវមាត់ទន្លេត្រឹម ១៥ នាទី</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="https://maps.app.goo.gl/xyukqr6VRi8BNYRW6" target="_blank" rel="noopener" class="w-full py-3.5 rounded-xl bg-royal-navy hover:bg-royal-blue text-white font-bold text-sm flex items-center justify-center gap-2 shadow transition">
+                            <i class="fa-solid fa-diamond-turn-right text-royal-gold"></i>
+                            <span>បើកនាំផ្លូវក្នុង Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right 7 Columns: Embedded Interactive Google Maps -->
+                <div class="lg:col-span-7 bg-white rounded-2xl p-3 shadow-md border border-slate-200 flex flex-col">
+                    <div class="relative w-full h-[380px] sm:h-full min-h-[380px] rounded-xl overflow-hidden bg-slate-200">
+                        <iframe
+                            title="ផែនទីទីតាំងគម្រោងដីឡូត៍ មរតកខ្មែរ"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6770.47101465116!2d104.68472871111365!3d11.574134096605599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1skm!2skh!4v1795591775523!5m2!1skm!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+                            class="w-full h-full border-0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <!-- Floating Pin Info Badge -->
+                        <div class="absolute bottom-3 left-3 right-3 sm:right-auto bg-royal-navy/95 text-white px-4 py-2.5 rounded-xl border border-royal-gold/40 shadow-lg backdrop-blur-md text-xs">
+                            <div class="font-bold text-royal-gold">📍 គម្រោងដីឡូត៍ ស្កាយវើលដ៏​ រេសុីដេន (Phnom Penh Riverside Zone)</div>
+                            <div class="text-slate-300 mt-0.5">មានរថយន្តក្រុមហ៊ុនជូនភ្ញៀវទៅមើលដីផ្ទាល់ដោយឥតគិតថ្លៃរៀងរាល់ថ្ងៃ!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 5: LAND BOOKING FORM & COMPANY CONTACT (បែបបទកក់ដី & ទំនាក់ទំនង) ==================== -->
+    <section id="booking" class="py-16 bg-royal-navy text-white relative overflow-hidden">
+        <!-- Decorative Gold Glow -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-royal-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+                <!-- Left 7 Columns: Land Booking Request Form (No Login Required) -->
+                <div class="lg:col-span-7 bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl border-t-4 border-royal-gold">
+                    <div class="mb-6">
+                        <span class="px-3 py-1 rounded-full bg-amber-100 text-royal-goldDark font-bold text-xs">📝 មិនចាំបាច់ Login • កក់ទុកមុនបានភ្លាម</span>
+                        <h2 class="font-moul text-xl sm:text-2xl text-royal-navy mt-2">បែបបទស្នើសុំកក់ដីឡូត៍ ឬណាត់មើលដីផ្ទាល់</h2>
+                        <p class="text-slate-500 text-sm mt-1">
+                            សូមបំពេញព័ត៌មានខាងក្រោម ក្រុមការងារផ្នែកលក់របស់យើងនឹងទាក់ទងបញ្ជាក់ជូនលោកអ្នកភ្លាមៗ។
+                        </p>
+                    </div>
+
+                    <form id="landBookingForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="guestName" class="block text-sm font-bold text-royal-navy mb-1.5">ឈ្មោះពេញរបស់លោកអ្នក <span class="text-rose-600">*</span></label>
+                                <input type="text" id="guestName" required placeholder="ឧ. សុខ ចាន់ដារ៉ា"
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-gold focus:ring-2 focus:ring-royal-gold/30 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label for="guestPhone" class="block text-sm font-bold text-royal-navy mb-1.5">លេខទូរស័ព្ទ / Telegram <span class="text-rose-600">*</span></label>
+                                <input type="tel" id="guestPhone" required placeholder="ឧ. 012 345 678"
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-gold focus:ring-2 focus:ring-royal-gold/30 outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="selectedPlotInput" class="block text-sm font-bold text-royal-navy mb-1.5">ជ្រើសរើសលេខឡូត៍ដី <span class="text-rose-600">*</span></label>
+                                <select id="selectedPlotInput" required
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:border-royal-gold focus:ring-2 focus:ring-royal-gold/30 outline-none text-sm font-semibold text-royal-navy">
+                                    <!-- Populated dynamically with available plots -->
+                                </select>
+                            </div>
+                            <div>
+                                <label for="paymentMethod" class="block text-sm font-bold text-royal-navy mb-1.5">ជម្រើសការទូទាត់ប្រាក់</label>
+                                <select id="paymentMethod"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:border-royal-gold focus:ring-2 focus:ring-royal-gold/30 outline-none text-sm">
+                                    <option value="បង់រំលស់គ្មានការប្រាក់ 0%">បង់រំលស់គ្មានការប្រាក់ 0% (រយៈពេល 36 ខែ)</option>
+                                    <option value="បង់ផ្តាច់បញ្ចុះតម្លៃពិសេស $1,000">បង់ផ្តាច់ 100% (បញ្ចុះតម្លៃពិសេស $1,000)</option>
+                                    <option value="កក់ប្រាក់បិទឡូត៍ទុកមុន $500">កក់ប្រាក់បិទឡូត៍ទុកមុន ($500)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="visitDate" class="block text-sm font-bold text-royal-navy mb-1.5">ថ្ងៃណាត់ជួបមើលដីផ្ទាល់</label>
+                                <input type="date" id="visitDate"
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-gold focus:ring-2 focus:ring-royal-gold/30 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label for="bookingType" class="block text-sm font-bold text-royal-navy mb-1.5">គោលបំណងស្នើសុំ</label>
+                                <select id="bookingType"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:border-royal-gold focus:ring-2 focus:ring-royal-gold/30 outline-none text-sm">
+                                    <option value="កក់ឡូត៍ដីទុកមុន">ស្នើសុំកក់ឡូត៍ដីទុកមុន</option>
+                                    <option value="ណាត់មើលទីតាំងដីផ្ទាល់">ណាត់ជួបទៅមើលទីតាំងដីផ្ទាល់</option>
+                                    <option value="ស្នើសុំតារាងបង់រំលស់លម្អិត">ស្នើសុំតារាងបង់រំលស់លម្អិត</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="guestNotes" class="block text-sm font-bold text-royal-navy mb-1.5">សំណូមពរ ឬកំណត់ចំណាំបន្ថែម</label>
+                            <textarea id="guestNotes" rows="2" placeholder="ឧ. ចង់ទិញ ២ឡូត៍ជាប់គ្នា ឬត្រូវការរថយន្តទទួលទៅមើលដី..."
+                                      class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-royal-gold focus:ring-2 focus:ring-royal-gold/30 outline-none text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-royal-gold to-amber-500 text-royal-navy font-bold text-base shadow-lg hover:brightness-105 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>បញ្ជូនសំណើកក់ដីឥឡូវនេះ</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right 5 Columns: Company Contact Information (ព័ត៌មានទំនាក់ទំនងក្រុមហ៊ុន) -->
+                <div id="contact" class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-royal-gold font-bold text-sm uppercase tracking-wider">📞 ព័ត៌មានទំនាក់ទំនងក្រុមហ៊ុន</span>
+                        <h2 class="font-moul text-xl sm:text-2xl text-white mt-2">ក្រុមហ៊ុន អភិវឌ្ឍន៍ដីឡូត៍ មរតកខ្មែរ</h2>
+                        <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                            យើងខ្ញុំរីករាយស្វាគមន៍ និងផ្តល់ប្រឹក្សាយោបល់ជូនអតិថិជនដោយឥតគិតថ្លៃ រៀងរាល់ថ្ងៃច័ន្ទ ដល់ថ្ងៃអាទិត្យ។
+                        </p>
+                    </div>
+
+                    <!-- Contact Cards -->
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-royal-gold text-royal-navy flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-royal-goldLight font-semibold">លេខទូរស័ព្ទប្រឹក្សាផ្នែកលក់ (24/7)</div>
+                                <div id="contact-phones" class="text-lg font-bold text-white mt-0.5">012 888 999 / 096 888 9999</div>
+                                <div class="text-xs text-slate-300 mt-0.5">មានប្រើប្រាស់ Telegram & WhatsApp គ្រប់ខ្សែ</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-sky-500 text-white flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-brands fa-telegram"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-sky-300 font-semibold">ឆាតសួរព័ត៌មានរហ័សតាម Telegram</div>
+                                <div id="contact-telegram-handle" class="text-base font-bold text-white mt-0.5">@MorodokKhmerLand</div>
+                                <a href="https://t.me/" target="_blank" rel="noopener" class="inline-block mt-1.5 text-xs px-3 py-1 rounded-lg bg-sky-500 hover:bg-sky-400 text-white font-semibold transition">
+                                    ចុចផ្ញើសារ Telegram ភ្លាម <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-amber-500/20 border border-royal-gold text-royal-gold flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-royal-goldLight font-semibold">អាសយដ្ឋានការិយាល័យកណ្តាល</div>
+                                <div id="contact-address" class="text-sm text-white mt-0.5 leading-relaxed">អគារលេខ ១៦៨ មហាវិថីព្រះនរោត្តម សង្កាត់ទន្លេបាសាក់ ខណ្ឌចំការមន រាជធានីភ្នំពេញ។</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-emerald-500/20 border border-emerald-400 text-emerald-300 flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-emerald-300 font-semibold">ម៉ោងធ្វើការ</div>
+                                <div id="contact-hours" class="text-sm text-white mt-0.5">ថ្ងៃច័ន្ទ - ថ្ងៃអាទិត្យ៖ ម៉ោង ៧:៣០ ព្រឹក ដល់ ៦:០០ ល្ងាច</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#060F1C] text-slate-400 py-8 border-t border-royal-gold/20 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <img src="Gemini_Generated_Gif_vdurstvdurstvdur.gif" alt="Skyworld Residence Logo" class="h-9 w-auto rounded-lg border border-royal-gold/30 object-cover">
+                <span>© 2026 <strong>គម្រោងដីឡូត៍ ស្កាយវើលដ៏ រេសុីដេន</strong>. រក្សាសិទ្ធិគ្រប់យ៉ាង។</span>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="#home" class="hover:text-royal-gold transition">ទំព័រដើម</a>
+                <a href="#masterplan" class="hover:text-royal-gold transition">ប្លង់ដីឡូត៍</a>
+                <a href="#location" class="hover:text-royal-gold transition">ទីតាំង</a>
+                <a href="#booking" class="hover:text-royal-gold transition">កក់ដី</a>
+                <a href="skyworld_admin_full.html" class="text-royal-gold hover:underline font-semibold">Admin Panel</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING QUICK CONTACT & BOOKING BAR (MOBILE & DESKTOP) ==================== -->
+    <div class="fixed bottom-4 right-4 z-40 flex flex-col sm:flex-row items-end sm:items-center gap-2.5">
+        <a href="tel:012888999" class="px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-xl flex items-center gap-2 transition">
+            <i class="fa-solid fa-phone"></i>
+            <span>តេសួរព័ត៌មាន</span>
+        </a>
+        <a href="#booking" class="px-4 py-3 rounded-full bg-royal-gold hover:bg-amber-400 text-royal-navy font-bold text-xs sm:text-sm shadow-xl flex items-center gap-2 transition">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>កក់ដីឥឡូវនេះ</span>
+        </a>
+    </div>
+
+    <!-- ==================== CUSTOM MODAL FOR BOOKING CONFIRMATION / MEDIA PREVIEW ==================== -->
+    <div id="customModal" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border-2 border-royal-gold animate-[fadeIn_0.2s_ease-out]">
+            <div class="bg-royal-navy text-white px-6 py-4 flex justify-between items-center">
+                <h3 id="modalTitle" class="font-bold text-lg text-royal-gold">ការបញ្ជាក់ការកក់ដីឡូត៍</h3>
+                <button onclick="closeCustomModal()" class="text-slate-300 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="modalBody" class="p-6 text-slate-700 text-sm space-y-4">
+                <!-- Dynamic content -->
+            </div>
+            <div class="bg-slate-50 px-6 py-3.5 flex justify-end border-t border-slate-200">
+                <button onclick="closeCustomModal()" class="px-5 py-2.5 rounded-xl bg-royal-navy text-white font-bold text-sm hover:bg-royal-blue transition">
+                    យល់ព្រម / បិទ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT: BOAT RACING ANIMATION & INTERACTIVE LAND PLOTS ==================== -->
+    <script>
+        /* =========================================================================
+           1. KHMER BOAT RACING ANIMATION (ប្រណាំងទូកងមុខព្រះបរមរាជវាំង)
+           ========================================================================= */
+        const canvas = document.getElementById('boatRaceCanvas');
+        const ctx = canvas.getContext('2d');
+        let width = 0;
+        let height = 0;
+        let speedMultiplier = 1;
+
+        // Toggle speed button
+        document.getElementById('toggleRaceSpeed').addEventListener('click', () => {
+            speedMultiplier = speedMultiplier === 1 ? 2.2 : 1;
+            const btn = document.getElementById('toggleRaceSpeed');
+            btn.innerHTML = speedMultiplier > 1
+                ? '<i class="fa-solid fa-bolt"></i> លឿនខ្លាំង'
+                : '<i class="fa-solid fa-forward"></i> ល្បឿន';
+        });
+
+        // Twinkling stars & riverside festive lights
+        const stars = Array.from({ length: 45 }, () => ({
+            x: Math.random(),
+            y: Math.random() * 0.42,
+            r: Math.random() * 1.6 + 0.5,
+            phase: Math.random() * Math.PI * 2
+        }));
+
+        // Floating sky lanterns / celebratory sparks
+        const lanterns = Array.from({ length: 12 }, () => ({
+            x: Math.random(),
+            y: Math.random() * 0.45,
+            speedY: 0.00015 + Math.random() * 0.0002,
+            sway: Math.random() * Math.PI * 2,
+            size: 3 + Math.random() * 3
+        }));
+
+        
+        // Falling Rumduol Flowers (ផ្ការំដូលធ្លាក់)
+        const rumduolFlowers = Array.from({ length: 24 }, () => ({
+            x: Math.random(),
+            y: Math.random(),
+            speedY: 0.0008 + Math.random() * 0.0012,
+            swaySpeed: 0.0015 + Math.random() * 0.002,
+            swayAmp: 15 + Math.random() * 25,
+            phase: Math.random() * Math.PI * 2,
+            rotation: Math.random() * Math.PI * 2,
+            rotSpeed: (Math.random() - 0.5) * 0.03,
+            size: 6 + Math.random() * 5
+        }));
+
+        function drawRumduolFlower(x, y, size, rotation, alpha) {
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.rotate(rotation);
+            ctx.globalAlpha = alpha;
+
+            // Soft golden glow around the ornament
+            const glow = ctx.createRadialGradient(0, 0, 1, 0, 0, size * 1.9);
+            glow.addColorStop(0, 'rgba(254, 240, 138, 0.55)');
+            glow.addColorStop(1, 'rgba(254, 240, 138, 0)');
+            ctx.fillStyle = glow;
+            ctx.beginPath();
+            ctx.arc(0, 0, size * 1.9, 0, Math.PI * 2);
+            ctx.fill();
+
+            // 4 Diagonal small golden corner accents
+            for (let i = 0; i < 4; i++) {
+                ctx.save();
+                ctx.rotate((i * Math.PI) / 2 + Math.PI / 4);
+                ctx.fillStyle = '#FACC15';
+                ctx.beginPath();
+                ctx.roundRect(-size * 0.32, -size * 0.95, size * 0.64, size * 0.5, 2);
+                ctx.fill();
+                ctx.restore();
+            }
+
+            // 4 Main pointed Khmer petals (Top, Right, Bottom, Left)
+            for (let i = 0; i < 4; i++) {
+                ctx.save();
+                ctx.rotate((i * Math.PI) / 2);
+
+                const pGrad = ctx.createLinearGradient(0, 0, 0, -size * 1.35);
+                pGrad.addColorStop(0, '#EAB308');
+                pGrad.addColorStop(0.6, '#FDE047');
+                pGrad.addColorStop(1, '#FEF08A');
+
+                ctx.fillStyle = pGrad;
+                ctx.strokeStyle = '#CA8A04';
+                ctx.lineWidth = 0.6;
+                ctx.beginPath();
+                ctx.moveTo(0, -size * 0.25);
+                ctx.quadraticCurveTo(-size * 0.68, -size * 0.65, 0, -size * 1.35);
+                ctx.quadraticCurveTo(size * 0.68, -size * 0.65, 0, -size * 0.25);
+                ctx.closePath();
+                ctx.fill();
+                ctx.stroke();
+
+                // Inner pointed petal detail
+                ctx.fillStyle = '#FEF9C3';
+                ctx.beginPath();
+                ctx.moveTo(0, -size * 0.35);
+                ctx.quadraticCurveTo(-size * 0.32, -size * 0.65, 0, -size * 0.95);
+                ctx.quadraticCurveTo(size * 0.32, -size * 0.65, 0, -size * 0.35);
+                ctx.closePath();
+                ctx.fill();
+
+                ctx.restore();
+            }
+
+            // Center medallion ring & gold disc
+            ctx.fillStyle = '#D97706';
+            ctx.beginPath();
+            ctx.arc(0, 0, size * 0.42, 0, Math.PI * 2);
+            ctx.fill();
+
+            const cGrad = ctx.createRadialGradient(-size * 0.1, -size * 0.1, 1, 0, 0, size * 0.34);
+            cGrad.addColorStop(0, '#FEF08A');
+            cGrad.addColorStop(0.7, '#FACC15');
+            cGrad.addColorStop(1, '#CA8A04');
+            ctx.fillStyle = cGrad;
+            ctx.beginPath();
+            ctx.arc(0, 0, size * 0.34, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.restore();
+        }
+
+        // Three Traditional Khmer Racing Boats (ទូកងខ្មែរ)
+        const boats = [
+            {
+                name: 'នាគរាជមរតកខ្មែរ',
+                x: -220,
+                yRatio: 0.67,
+                speed: 1.45,
+                scale: 0.82,
+                hullColor: '#8B0000',
+                trimColor: '#FACC15',
+                shirtColor: '#FFFFFF',
+                rowers: 14,
+                phaseOffset: 0
+            },
+            {
+                name: 'ឥន្ទ្រីមាសតេជោ',
+                x: -420,
+                yRatio: 0.77,
+                speed: 1.75,
+                scale: 0.96,
+                hullColor: '#0F294A',
+                trimColor: '#F59E0B',
+                shirtColor: '#FDE047',
+                rowers: 16,
+                phaseOffset: 1.4
+            },
+            {
+                name: 'ហង្សមាសមាត់ទន្លេ',
+                x: -120,
+                yRatio: 0.88,
+                speed: 1.6,
+                scale: 1.08,
+                hullColor: '#065F46',
+                trimColor: '#FBBF24',
+                shirtColor: '#38BDF8',
+                rowers: 18,
+                phaseOffset: 2.7
+            }
+        ];
+
+        function resizeCanvas() {
+            const rect = canvas.parentElement.getBoundingClientRect();
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            width = rect.width;
+            height = rect.height;
+            canvas.width = width * dpr;
+            canvas.height = height * dpr;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Draw Royal Palace of Cambodia Silhouette & Golden Spires (ព្រះបរមរាជវាំង)
+        function drawRoyalPalace(horizonY, time) {
+            const palaceCenterX = width * 0.68;
+            const scale = Math.max(0.65, Math.min(1.15, width / 1100));
+
+            ctx.save();
+            ctx.translate(palaceCenterX, horizonY);
+            ctx.scale(scale, scale);
+
+            // Soft golden backlight aura behind the Royal Palace
+            const aura = ctx.createRadialGradient(0, -75, 10, 0, -75, 220);
+            aura.addColorStop(0, 'rgba(250, 204, 21, 0.35)');
+            aura.addColorStop(0.5, 'rgba(217, 119, 6, 0.12)');
+            aura.addColorStop(1, 'rgba(11, 25, 44, 0)');
+            ctx.fillStyle = aura;
+            ctx.beginPath();
+            ctx.arc(0, -75, 220, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Palace Outer Wall (កំពែងព្រះបរមរាជវាំង)
+            ctx.fillStyle = '#EAB308';
+            ctx.fillRect(-240, -24, 480, 24);
+            ctx.fillStyle = '#FEF08A';
+            ctx.fillRect(-240, -27, 480, 3);
+
+            // Helper function to draw tiered Khmer Prasat roof & golden spire
+            function drawPrasat(offsetX, baseW, baseH, spireH, isMain) {
+                ctx.save();
+                ctx.translate(offsetX, -24);
+
+                // Main pavilion body
+                ctx.fillStyle = isMain ? '#FEF9C3' : '#FDE68A';
+                ctx.fillRect(-baseW / 2, -baseH, baseW, baseH);
+
+                // Ornate red/gold window arches
+                ctx.fillStyle = '#991B1B';
+                const cols = isMain ? 5 : 3;
+                const step = baseW / (cols + 1);
+                for (let i = 1; i <= cols; i++) {
+                    ctx.fillRect(-baseW / 2 + i * step - 3, -baseH + 8, 6, baseH - 12);
+                }
+
+                // Multi-tiered Khmer Roof (ដំបូលប្រាសាទក្បាច់ខ្មែរ)
+                const tiers = isMain ? 4 : 3;
+                let curY = -baseH;
+                let curW = baseW + 16;
+                for (let t = 0; t < tiers; t++) {
+                    ctx.fillStyle = t % 2 === 0 ? '#B45309' : '#D97706';
+                    ctx.beginPath();
+                    ctx.moveTo(-curW / 2, curY);
+                    ctx.quadraticCurveTo(-curW * 0.25, curY - 10, 0, curY - 14);
+                    ctx.quadraticCurveTo(curW * 0.25, curY - 10, curW / 2, curY);
+                    ctx.closePath();
+                    ctx.fill();
+
+                    // Gold roof edge trim
+                    ctx.strokeStyle = '#FDE047';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+
+                    curY -= 11;
+                    curW *= 0.72;
+                }
+
+                // Tall Golden Spire (កំពូលស្រួចព្រះទីនាំងទេវាវិនិច្ឆ័យ)
+                const grad = ctx.createLinearGradient(0, curY, 0, curY - spireH);
+                grad.addColorStop(0, '#F59E0B');
+                grad.addColorStop(1, '#FEF08A');
+                ctx.fillStyle = grad;
+                ctx.beginPath();
+                ctx.moveTo(-6, curY);
+                ctx.lineTo(0, curY - spireH);
+                ctx.lineTo(6, curY);
+                ctx.closePath();
+                ctx.fill();
+
+                ctx.restore();
+            }
+
+            // Left & Right Secondary Pavilions + Center Throne Hall (ព្រះទីនាំងទេវាវិនិច្ឆ័យ)
+            drawPrasat(-145, 58, 30, 38, false);
+            drawPrasat(-75, 65, 34, 45, false);
+            drawPrasat(0, 92, 44, 68, true);
+            drawPrasat(75, 65, 34, 45, false);
+            drawPrasat(145, 58, 30, 38, false);
+
+            ctx.restore();
+        }
+
+        // Draw Riverside Promenade & Festive Lights (ភ្លើងលម្អតាមមាត់ទន្លេ)
+        function drawRiversidePromenade(horizonY, time) {
+            // Promenade stone embankment
+            ctx.fillStyle = '#1E293B';
+            ctx.fillRect(0, horizonY - 4, width, 14);
+            ctx.fillStyle = '#D4AF37';
+            ctx.fillRect(0, horizonY - 4, width, 2);
+
+            // String of festive glowing bulbs along the riverside
+            const spacing = 28;
+            const colors = ['#FACC15', '#F43F5E', '#38BDF8', '#34D399', '#FB923C'];
+            for (let x = 10; x < width; x += spacing) {
+                const idx = Math.floor(x / spacing);
+                const color = colors[idx % colors.length];
+                const pulse = 0.65 + 0.35 * Math.sin(time * 0.005 + idx);
+
+                // Light pole
+                ctx.strokeStyle = '#475569';
+                ctx.lineWidth = 1.5;
+                ctx.beginPath();
+                ctx.moveTo(x, horizonY - 3);
+                ctx.lineTo(x, horizonY - 18);
+                ctx.stroke();
+
+                // Glowing bulb
+                ctx.save();
+                ctx.globalAlpha = pulse;
+                ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(x, horizonY - 20, 3.2, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Reflection shimmer on water below
+                ctx.fillRect(x - 1, horizonY + 12 + (idx % 3) * 4, 2, 10 * pulse);
+                ctx.restore();
+            }
+        }
+
+        // Draw Waving Cambodian National Flag (ទង់ជាតិខ្មែរ 🇰🇭)
+        function drawCambodianFlag(x, y, time, scale) {
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.scale(scale, scale);
+
+            // Flagpole
+            ctx.strokeStyle = '#FDE047';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, -34);
+            ctx.stroke();
+
+            // Flag dimensions
+            const fw = 32;
+            const fh = 20;
+            const wave = Math.sin(time * 0.01) * 2.5;
+
+            // Top Blue Stripe
+            ctx.fillStyle = '#032EA1';
+            ctx.beginPath();
+            ctx.moveTo(0, -34);
+            ctx.quadraticCurveTo(fw * 0.5, -34 + wave, fw, -34 - wave * 0.5);
+            ctx.lineTo(fw, -29 - wave * 0.5);
+            ctx.quadraticCurveTo(fw * 0.5, -29 + wave, 0, -29);
+            ctx.closePath();
+            ctx.fill();
+
+            // Middle Red Stripe
+            ctx.fillStyle = '#E00025';
+            ctx.beginPath();
+            ctx.moveTo(0, -29);
+            ctx.quadraticCurveTo(fw * 0.5, -29 + wave, fw, -29 - wave * 0.5);
+            ctx.lineTo(fw, -19 - wave * 0.5);
+            ctx.quadraticCurveTo(fw * 0.5, -19 + wave, 0, -19);
+            ctx.closePath();
+            ctx.fill();
+
+            // Bottom Blue Stripe
+            ctx.fillStyle = '#032EA1';
+            ctx.beginPath();
+            ctx.moveTo(0, -19);
+            ctx.quadraticCurveTo(fw * 0.5, -19 + wave, fw, -19 - wave * 0.5);
+            ctx.lineTo(fw, -14 - wave * 0.5);
+            ctx.quadraticCurveTo(fw * 0.5, -14 + wave, 0, -14);
+            ctx.closePath();
+            ctx.fill();
+
+            // White Angkor Wat Three-Tower Emblem in center
+            ctx.fillStyle = '#FFFFFF';
+            const cx = fw * 0.48;
+            const cy = -21 + wave * 0.4;
+            ctx.fillRect(cx - 5, cy - 2, 10, 3);
+            ctx.fillRect(cx - 4, cy - 4, 2, 2);
+            ctx.fillRect(cx - 1, cy - 6, 2, 4);
+            ctx.fillRect(cx + 2, cy - 4, 2, 2);
+
+            ctx.restore();
+        }
+
+        // Draw Traditional Khmer Racing Longboat with Animated Rowers (ទូកង និងអ្នកអុំទូក)
+        function drawRacingBoat(boat, time) {
+            const boatLength = 250 + boat.rowers * 5;
+            const bobY = Math.sin(time * 0.006 + boat.phaseOffset) * 2.5;
+            const strokeAngle = Math.sin(time * 0.014 * speedMultiplier + boat.phaseOffset);
+
+            ctx.save();
+            ctx.translate(boat.x, boat.yRatio * height + bobY);
+            ctx.scale(boat.scale, boat.scale);
+
+            // Water wake / foam trail behind boat
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.45)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(-boatLength * 0.55, 6);
+            ctx.lineTo(-boatLength * 0.55 - 45, 4);
+            ctx.moveTo(-boatLength * 0.5, 10);
+            ctx.lineTo(-boatLength * 0.5 - 30, 11);
+            ctx.stroke();
+
+            // Cambodian Flag at Stern (ទង់ជាតិខ្មែរនៅកន្ទុយទូក)
+            drawCambodianFlag(-boatLength * 0.42, -8, time, 1.05);
+
+            // Rowers & Animated Paddles (អ្នកអុំទូកមានចលនាអុំចែវ)
+            const startX = -boatLength * 0.34;
+            const spacing = (boatLength * 0.68) / boat.rowers;
+
+            for (let i = 0; i < boat.rowers; i++) {
+                const rx = startX + i * spacing;
+                const localStroke = Math.sin(time * 0.014 * speedMultiplier + boat.phaseOffset + i * 0.15);
+                const lean = localStroke * 3;
+
+                // Rower torso
+                ctx.fillStyle = boat.shirtColor;
+                ctx.beginPath();
+                ctx.roundRect(rx - 3 + lean * 0.4, -14, 6, 10, 2);
+                ctx.fill();
+
+                // Rower head + traditional krama headband
+                ctx.fillStyle = '#D97706';
+                ctx.beginPath();
+                ctx.arc(rx + lean * 0.5, -17, 3.2, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.fillStyle = '#DC2626';
+                ctx.fillRect(rx - 3 + lean * 0.5, -19, 6, 1.5);
+
+                // Animated Rowing Paddle (ចែវទូក)
+                const paddleTipX = rx - 6 - localStroke * 11;
+                const paddleTipY = 12 + Math.abs(localStroke) * 4;
+                ctx.strokeStyle = '#FDE68A';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(rx + 2 + lean, -11);
+                ctx.lineTo(paddleTipX, paddleTipY);
+                ctx.stroke();
+
+                // Water splash droplet when paddle dips into river
+                if (localStroke > 0.35) {
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                    ctx.beginPath();
+                    ctx.arc(paddleTipX - 2, 9, 2.2, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+
+            // Bow Dancer / Drummer cheering at front of boat (អ្នករាំក្បាលទូក)
+            const bowX = boatLength * 0.38;
+            const danceBounce = Math.abs(Math.sin(time * 0.012 + boat.phaseOffset)) * 4;
+            ctx.fillStyle = '#FACC15';
+            ctx.fillRect(bowX - 3, -18 - danceBounce, 6, 11);
+            ctx.fillStyle = '#B45309';
+            ctx.beginPath();
+            ctx.arc(bowX, -21 - danceBounce, 3.3, 0, Math.PI * 2);
+            ctx.fill();
+            // Raised cheering arms
+            ctx.strokeStyle = '#FACC15';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(bowX - 6, -24 - danceBounce);
+            ctx.lineTo(bowX, -16 - danceBounce);
+            ctx.lineTo(bowX + 6, -25 - danceBounce);
+            ctx.stroke();
+
+            // Ornate Khmer Longboat Hull (តួទូកង និងក្បាលនាគ)
+            ctx.fillStyle = boat.hullColor;
+            ctx.beginPath();
+            ctx.moveTo(-boatLength * 0.52, -16); // High curved tail
+            ctx.quadraticCurveTo(-boatLength * 0.42, -3, -boatLength * 0.35, -3);
+            ctx.lineTo(boatLength * 0.36, -3);
+            ctx.quadraticCurveTo(boatLength * 0.46, -4, boatLength * 0.55, -20); // High curved Naga prow
+            ctx.quadraticCurveTo(boatLength * 0.48, 8, boatLength * 0.32, 9);
+            ctx.lineTo(-boatLength * 0.32, 9);
+            ctx.quadraticCurveTo(-boatLength * 0.46, 8, -boatLength * 0.52, -16);
+            ctx.closePath();
+            ctx.fill();
+
+            // Gold decorative stripe along hull
+            ctx.strokeStyle = boat.trimColor;
+            ctx.lineWidth = 2.2;
+            ctx.beginPath();
+            ctx.moveTo(-boatLength * 0.48, -11);
+            ctx.quadraticCurveTo(0, 3, boatLength * 0.51, -14);
+            ctx.stroke();
+
+            ctx.restore();
+        }
+
+        // Main Animation Loop
+        let lastTime = 0;
+        function animateScene(time) {
+            const dt = Math.min(32, time - lastTime);
+            lastTime = time;
+
+            const horizonY = height * 0.56;
+
+            // 1. Twilight Dusk Sky Gradient
+            const skyGrad = ctx.createLinearGradient(0, 0, 0, horizonY);
+            skyGrad.addColorStop(0, '#071120');
+            skyGrad.addColorStop(0.55, '#132A4A');
+            skyGrad.addColorStop(0.85, '#3B2F63');
+            skyGrad.addColorStop(1, '#9A5B25');
+            ctx.fillStyle = skyGrad;
+            ctx.fillRect(0, 0, width, horizonY);
+
+            // 2. Twinkling Stars
+            stars.forEach(s => {
+                const alpha = 0.3 + 0.7 * Math.abs(Math.sin(time * 0.002 + s.phase));
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                ctx.beginPath();
+                ctx.arc(s.x * width, s.y * height, s.r, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            // 3. Floating Sky Lanterns (គោមបង្ហោះ)
+            lanterns.forEach(l => {
+                l.y -= l.speedY;
+                if (l.y < -0.05) l.y = 0.52;
+                const lx = l.x * width + Math.sin(time * 0.0015 + l.sway) * 14;
+                const ly = l.y * height;
+
+                const glow = ctx.createRadialGradient(lx, ly, 1, lx, ly, l.size * 3.5);
+                glow.addColorStop(0, 'rgba(254, 240, 138, 0.95)');
+                glow.addColorStop(0.5, 'rgba(245, 158, 11, 0.45)');
+                glow.addColorStop(1, 'rgba(245, 158, 11, 0)');
+                ctx.fillStyle = glow;
+                ctx.beginPath();
+                ctx.arc(lx, ly, l.size * 3.5, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            // 4. Royal Palace Backdrop
+            drawRoyalPalace(horizonY, time);
+
+            // 5. Chaktomuk River Water Gradient
+            const riverGrad = ctx.createLinearGradient(0, horizonY, 0, height);
+            riverGrad.addColorStop(0, '#0F294A');
+            riverGrad.addColorStop(0.4, '#0B3B60');
+            riverGrad.addColorStop(1, '#061A30');
+            ctx.fillStyle = riverGrad;
+            ctx.fillRect(0, horizonY, width, height - horizonY);
+
+            // 6. Riverside Festive Lights
+            drawRiversidePromenade(horizonY, time);
+
+            // 7. Animated Shimmering Water Waves (ចលនារលកទឹក)
+            for (let row = 0; row < 12; row++) {
+                const waveY = horizonY + 18 + row * ((height - horizonY - 20) / 12);
+                ctx.strokeStyle = row % 2 === 0 ? 'rgba(125, 211, 252, 0.16)' : 'rgba(253, 224, 71, 0.09)';
+                ctx.lineWidth = 1.5;
+                ctx.beginPath();
+                for (let wx = 0; wx <= width; wx += 30) {
+                    const offset = Math.sin(wx * 0.02 + time * 0.003 + row) * 3;
+                    if (wx === 0) ctx.moveTo(wx, waveY + offset);
+                    else ctx.lineTo(wx, waveY + offset);
+                }
+                ctx.stroke();
+            }
+
+            // 8. Update & Draw Racing Khmer Longboats (Left to Right)
+            boats.forEach(boat => {
+                boat.x += boat.speed * speedMultiplier;
+                if (boat.x - 220 > width) {
+                    boat.x = -260 - Math.random() * 120;
+                }
+                drawRacingBoat(boat, time);
+            });
+
+            // 9. Update & Draw Falling Rumduol Flowers (ចលនាផ្ការំដូលធ្លាក់)
+            rumduolFlowers.forEach(f => {
+                f.y += f.speedY;
+                f.rotation += f.rotSpeed;
+                if (f.y > 1.05) {
+                    f.y = -0.05;
+                    f.x = Math.random();
+                }
+                const fx = f.x * width + Math.sin(time * f.swaySpeed + f.phase) * f.swayAmp;
+                const fy = f.y * height;
+                drawRumduolFlower(fx, fy, f.size, f.rotation, 0.92);
+            });
+
+            requestAnimationFrame(animateScene);
+        }
+
+        window.addEventListener('load', () => {
+            requestAnimationFrame(animateScene);
+        });
+
+
+        /* =========================================================================
+           2. LAND PLOTS DATA & INTERACTIVE MASTER PLAN LOGIC
+           ========================================================================= */
+        const landPlots = [
+            // Zone A: 12 Riverfront Plots (10m x 20m = 200m²)
+            { id: 'A01', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 19500, monthly: 325, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'available' },
+            { id: 'A02', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 19500, monthly: 325, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'available' },
+            { id: 'A03', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 19000, monthly: 316, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'reserved' },
+            { id: 'A04', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 19000, monthly: 316, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'sold' },
+            { id: 'A05', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 19000, monthly: 316, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'available' },
+            { id: 'A06', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 21500, monthly: 358, facing: 'កែងផ្លូវ 15m & មាត់ទន្លេ', status: 'available' },
+            { id: 'A07', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 21500, monthly: 358, facing: 'កែងផ្លូវ 15m & មាត់ទន្លេ', status: 'sold' },
+            { id: 'A08', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 18500, monthly: 308, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'available' },
+            { id: 'A09', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 18500, monthly: 308, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'available' },
+            { id: 'A10', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 18500, monthly: 308, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'reserved' },
+            { id: 'A11', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 19000, monthly: 316, facing: 'ទិសខាងកើត (មាត់ទន្លេ)', status: 'available' },
+            { id: 'A12', zone: 'A', zoneLabel: 'តំបន់ A (មាត់ទន្លេ)', size: '10m × 20m (200 m²)', price: 22000, monthly: 366, facing: 'ឡូត៍កែងពិសេសមាត់ទន្លេ', status: 'available' },
+
+            // Zone B: 12 Commercial Main Road Plots (5m x 20m = 100m²)
+            { id: 'B01', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 13800, monthly: 230, facing: 'ទិសខាងជើង (ផ្លូវ 15m)', status: 'sold' },
+            { id: 'B02', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12800, monthly: 213, facing: 'ទិសខាងជើង (ផ្លូវ 15m)', status: 'available' },
+            { id: 'B03', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12800, monthly: 213, facing: 'ទិសខាងជើង (ផ្លូវ 15m)', status: 'available' },
+            { id: 'B04', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12500, monthly: 208, facing: 'ទិសខាងជើង (ផ្លូវ 15m)', status: 'reserved' },
+            { id: 'B05', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12500, monthly: 208, facing: 'ទិសខាងជើង (ផ្លូវ 15m)', status: 'available' },
+            { id: 'B06', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 14000, monthly: 233, facing: 'ឡូត៍កែងផ្លូវមេ 15m', status: 'available' },
+            { id: 'B07', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 14000, monthly: 233, facing: 'ឡូត៍កែងផ្លូវមេ 15m', status: 'sold' },
+            { id: 'B08', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12500, monthly: 208, facing: 'ទិសខាងត្បូង (ផ្លូវ 10m)', status: 'available' },
+            { id: 'B09', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12500, monthly: 208, facing: 'ទិសខាងត្បូង (ផ្លូវ 10m)', status: 'available' },
+            { id: 'B10', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12500, monthly: 208, facing: 'ទិសខាងត្បូង (ផ្លូវ 10m)', status: 'available' },
+            { id: 'B11', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 12800, monthly: 213, facing: 'ទិសខាងត្បូង (ផ្លូវ 10m)', status: 'reserved' },
+            { id: 'B12', zone: 'B', zoneLabel: 'តំបន់ B (ជាប់ផ្លូវមេ 15m)', size: '5m × 20m (100 m²)', price: 13500, monthly: 225, facing: 'ឡូត៍កែងផ្លូវ 10m', status: 'available' },
+
+            // Zone C: 12 Residential Plots (5m x 20m = 100m²)
+            { id: 'C01', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 10800, monthly: 180, facing: 'ឡូត៍កែងផ្លូវ 10m', status: 'available' },
+            { id: 'C02', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងជើង (ផ្លូវ 10m)', status: 'available' },
+            { id: 'C03', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងជើង (ផ្លូវ 10m)', status: 'available' },
+            { id: 'C04', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងជើង (ផ្លូវ 10m)', status: 'sold' },
+            { id: 'C05', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងជើង (ផ្លូវ 10m)', status: 'sold' },
+            { id: 'C06', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 11200, monthly: 186, facing: 'ឡូត៍កែងផ្លូវ 10m', status: 'available' },
+            { id: 'C07', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 10500, monthly: 175, facing: 'ទិសខាងលិច', status: 'available' },
+            { id: 'C08', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងលិច', status: 'reserved' },
+            { id: 'C09', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងលិច', status: 'available' },
+            { id: 'C10', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងលិច', status: 'available' },
+            { id: 'C11', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 9800, monthly: 163, facing: 'ទិសខាងលិច', status: 'sold' },
+            { id: 'C12', zone: 'C', zoneLabel: 'តំបន់ C (លំនៅឋាន)', size: '5m × 20m (100 m²)', price: 11000, monthly: 183, facing: 'ឡូត៍កែង', status: 'available' }
+        ];
+
+        let activeFilter = 'all';
+        let selectedPlot = landPlots[0];
+
+        function renderMasterPlan() {
+            ['A', 'B', 'C'].forEach(zone => {
+                const container = document.getElementById(`grid-zone-${zone}`);
+                container.innerHTML = '';
+                const zonePlots = landPlots.filter(p => p.zone === zone);
+
+                zonePlots.forEach(plot => {
+                    const isDimmed = activeFilter !== 'all' && plot.status !== activeFilter;
+                    const isSelected = selectedPlot && selectedPlot.id === plot.id;
+
+                    let statusClasses = '';
+                    let statusText = '';
+                    if (plot.status === 'available') {
+                        statusClasses = 'bg-emerald-50 border-emerald-500 text-emerald-950 hover:bg-emerald-100 plot-available';
+                        statusText = 'ទំនេរ';
+                    } else if (plot.status === 'reserved') {
+                        statusClasses = 'bg-amber-50 border-amber-400 text-amber-950 hover:bg-amber-100';
+                        statusText = 'បានកក់';
+                    } else {
+                        statusClasses = 'bg-rose-50 border-rose-400 text-rose-950 opacity-85';
+                        statusText = 'លក់រួច';
+                    }
+
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.onclick = () => inspectPlot(plot.id);
+                    btn.className = `p-2.5 rounded-xl border-2 text-center transition flex flex-col items-center justify-center relative ${statusClasses} ${isDimmed ? 'opacity-25 scale-95' : ''} ${isSelected ? 'ring-4 ring-royal-navy scale-[1.03] z-10' : ''}`;
+
+                    btn.innerHTML = `
+                        <span class="text-xs font-extrabold tracking-tight">${plot.id}</span>
+                        <span class="text-[11px] font-bold mt-0.5">$${plot.price.toLocaleString()}</span>
+                        <span class="text-[10px] mt-1 px-1.5 py-0.5 rounded-full font-semibold ${
+                            plot.status === 'available' ? 'bg-emerald-500 text-white' :
+                            plot.status === 'reserved' ? 'bg-amber-400 text-royal-navy' : 'bg-rose-500 text-white'
+                        }">${statusText}</span>
+                    `;
+                    container.appendChild(btn);
+                });
+            });
+
+            updateSummaryStats();
+            populateBookingSelect();
+        }
+
+        function updateSummaryStats() {
+            const avail = landPlots.filter(p => p.status === 'available').length;
+            document.getElementById('stat-available-count').textContent = `${avail} ឡូត៍ទំនេរ`;
+            const totalEl = document.getElementById('stat-total-count');
+            if (totalEl) totalEl.textContent = `${landPlots.length} ឡូត៍`;
+            const filterAllEl = document.getElementById('filter-all-count');
+            if (filterAllEl) filterAllEl.textContent = landPlots.length;
+        }
+
+        function setPlotFilter(status) {
+            activeFilter = status;
+            document.querySelectorAll('.filter-btn').forEach(b => {
+                b.classList.remove('ring-2', 'ring-royal-gold', 'bg-royal-navy', 'text-white');
+            });
+            const activeBtn = document.getElementById(`filter-${status}`);
+            if (activeBtn) {
+                activeBtn.classList.add('ring-2', 'ring-royal-gold');
+            }
+            renderMasterPlan();
+        }
+
+        function filterPlotsByZone(zone) {
+            const firstInZone = landPlots.find(p => p.zone === zone && p.status === 'available') || landPlots.find(p => p.zone === zone);
+            if (firstInZone) {
+                inspectPlot(firstInZone.id);
+            }
+        }
+
+        function inspectPlot(plotId) {
+            const plot = landPlots.find(p => p.id === plotId);
+            if (!plot) return;
+            selectedPlot = plot;
+
+            document.getElementById('detail-plot-title').textContent = `ឡូត៍លេខ ${plot.id}`;
+            document.getElementById('detail-plot-zone').textContent = plot.zoneLabel;
+            document.getElementById('detail-plot-size').textContent = plot.size;
+            document.getElementById('detail-plot-facing').textContent = plot.facing;
+            document.getElementById('detail-plot-price').textContent = `$${plot.price.toLocaleString()}`;
+            document.getElementById('detail-plot-installment').textContent = `$${plot.monthly} / ខែ`;
+
+            const badge = document.getElementById('detail-plot-badge');
+            const bookBtn = document.getElementById('detail-book-btn');
+
+            if (plot.status === 'available') {
+                badge.className = 'px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800';
+                badge.textContent = '🟢 ទំនេរ (អាចកក់បាន)';
+                bookBtn.disabled = false;
+                bookBtn.className = 'w-full py-3.5 rounded-xl bg-gradient-to-r from-royal-gold to-amber-500 text-royal-navy font-bold text-sm sm:text-base shadow-md hover:brightness-105 transition flex items-center justify-center gap-2';
+                bookBtn.innerHTML = `<i class="fa-solid fa-file-signature"></i><span>ស្នើសុំកក់ឡូត៍ ${plot.id} ឥឡូវនេះ</span>`;
+            } else if (plot.status === 'reserved') {
+                badge.className = 'px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800';
+                badge.textContent = '🟡 បានកក់ប្រាក់';
+                bookBtn.disabled = false;
+                bookBtn.className = 'w-full py-3.5 rounded-xl bg-amber-500 text-royal-navy font-bold text-sm sm:text-base shadow-md hover:bg-amber-400 transition flex items-center justify-center gap-2';
+                bookBtn.innerHTML = `<i class="fa-solid fa-clock"></i><span>ចុះឈ្មោះបម្រុងសម្រាប់ឡូត៍ ${plot.id}</span>`;
+            } else {
+                badge.className = 'px-3.5 py-1.5 rounded-full text-xs font-bold bg-rose-100 text-rose-800';
+                badge.textContent = '🔴 លក់រួចរាល់';
+                bookBtn.disabled = true;
+                bookBtn.className = 'w-full py-3.5 rounded-xl bg-slate-300 text-slate-500 font-bold text-sm cursor-not-allowed flex items-center justify-center gap-2';
+                bookBtn.innerHTML = `<i class="fa-solid fa-lock"></i><span>ឡូត៍នេះត្រូវបានលក់រួចហើយ</span>`;
+            }
+
+            renderMasterPlan();
+        }
+
+        function populateBookingSelect() {
+            const select = document.getElementById('selectedPlotInput');
+            const currentVal = select.value;
+            select.innerHTML = '';
+
+            landPlots.forEach(plot => {
+                if (plot.status !== 'sold') {
+                    const opt = document.createElement('option');
+                    opt.value = plot.id;
+                    const tag = plot.status === 'reserved' ? '[បានកក់]' : '[ទំនេរ]';
+                    opt.textContent = `ឡូត៍ ${plot.id} • ${plot.size} • $${plot.price.toLocaleString()} ${tag}`;
+                    select.appendChild(opt);
+                }
+            });
+
+            if (selectedPlot && selectedPlot.status !== 'sold') {
+                select.value = selectedPlot.id;
+            } else if (currentVal) {
+                select.value = currentVal;
+            }
+        }
+
+        function selectPlotForBooking() {
+            if (!selectedPlot || selectedPlot.status === 'sold') return;
+            const select = document.getElementById('selectedPlotInput');
+            select.value = selectedPlot.id;
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                document.getElementById('guestName').focus();
+            }, 600);
+        }
+
+
+        /* =========================================================================
+           3. GALLERY TABS, LIGHTBOX & BOOKING FORM SUBMISSION
+           ========================================================================= */
+        function switchGalleryTab(category) {
+            document.querySelectorAll('.gal-tab').forEach(btn => {
+                if (btn.dataset.tab === category) {
+                    btn.className = 'gal-tab px-4 py-2 rounded-xl text-sm font-bold bg-royal-navy text-white transition';
+                } else {
+                    btn.className = 'gal-tab px-4 py-2 rounded-xl text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+                }
+            });
+
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        function openVideoModal() {
+            document.getElementById('modalTitle').textContent = '🎬 វីដេអូបង្ហាញគម្រោងដីឡូត៍ មរតកខ្មែរ';
+            document.getElementById('modalBody').innerHTML = `
+                <div class="rounded-xl overflow-hidden bg-royal-navy text-white p-6 text-center space-y-4 border border-royal-gold/40">
+                    <div class="w-16 h-16 rounded-full bg-royal-gold/20 text-royal-gold flex items-center justify-center mx-auto text-3xl animate-pulse">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-royal-gold">ទិដ្ឋភាពការដ្ឋានជាក់ស្តែង ៣៦០ ដឺក្រេ</h4>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        គម្រោងដីឡូត៍ មរតកខ្មែរ បានបញ្ចប់ការចាក់ផ្លូវបេតុង ១៥ម៉ែត្រ ការដាក់ប្រព័ន្ធលូ បង្គោលភ្លើង និងការបោះបង្គោលព្រំដីគ្រប់ឡូត៍រួចរាល់។ លោកអ្នកអាចណាត់ជួបក្រុមការងារដើម្បីជិះរថយន្តទៅទស្សនាទីតាំងផ្ទាល់ដោយឥតគិតថ្លៃ!
+                    </p>
+                    <div class="grid grid-cols-3 gap-2 pt-2 text-xs">
+                        <div class="bg-white/10 p-2.5 rounded-lg">✅ ផ្លូវបេតុង 100%</div>
+                        <div class="bg-white/10 p-2.5 rounded-lg">✅ ទឹកភ្លើងរដ្ឋ 100%</div>
+                        <div class="bg-white/10 p-2.5 rounded-lg">✅ ប្លង់រឹង 100%</div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('customModal').classList.remove('hidden');
+        }
+
+        function openImageModal(card) {
+            const img = card.querySelector('img');
+            const title = card.querySelector('h4').textContent;
+            const desc = card.querySelector('p').textContent;
+
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalBody').innerHTML = `
+                <img src="${img.src}" alt="${title}" class="w-full h-64 object-cover rounded-xl border border-slate-200">
+                <p class="text-slate-600 text-sm leading-relaxed">${desc}</p>
+            `;
+            document.getElementById('customModal').classList.remove('hidden');
+        }
+
+        function closeCustomModal() {
+            document.getElementById('customModal').classList.add('hidden');
+        }
+
+        // Handle Booking Form Submission (No alert() used!)
+        document.getElementById('landBookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('guestName').value.trim();
+            const phone = document.getElementById('guestPhone').value.trim();
+            const plotId = document.getElementById('selectedPlotInput').value;
+            const payment = document.getElementById('paymentMethod').value;
+            const visitDate = document.getElementById('visitDate').value || 'ឆាប់ៗនេះ (តាមការណាត់)';
+            const reqType = document.getElementById('bookingType').value;
+
+            // Update plot status to 'reserved' in the live session
+            const plotObj = landPlots.find(p => p.id === plotId);
+            if (plotObj && plotObj.status === 'available') {
+                plotObj.status = 'reserved';
+            }
+            inspectPlot(plotId);
+
+            const refCode = 'MK-' + Math.floor(100000 + Math.random() * 900000);
+
+            document.getElementById('modalTitle').textContent = '✅ បានទទួលសំណើកក់ដីដោយជោគជ័យ!';
+            document.getElementById('modalBody').innerHTML = `
+                <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900">
+                    <div class="font-bold text-base">សូមអរគុណ លោក/លោកស្រី ${name}!</div>
+                    <p class="text-xs mt-1">ក្រុមការងារផ្នែកលក់របស់យើងនឹងទាក់ទងទៅកាន់លេខ <strong>${phone}</strong> ក្នុងរយៈពេល ១៥នាទី ដើម្បីបញ្ជាក់ជូន។</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 text-xs sm:text-sm">
+                    <div class="flex justify-between"><span class="text-slate-500">លេខកូដសំណើ៖</span><strong class="text-royal-navy">${refCode}</strong></div>
+                    <div class="flex justify-between"><span class="text-slate-500">ឡូត៍ដីដែលបានជ្រើស៖</span><strong class="text-royal-goldDark">ឡូត៍ ${plotId} (${plotObj ? plotObj.size : ''})</strong></div>
+                    <div class="flex justify-between"><span class="text-slate-500">តម្លៃដី៖</span><strong class="text-royal-navy">$${plotObj ? plotObj.price.toLocaleString() : ''}</strong></div>
+                    <div class="flex justify-between"><span class="text-slate-500">ប្រភេទសំណើ៖</span><span>${reqType}</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">ជម្រើសបង់ប្រាក់៖</span><span>${payment}</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">ថ្ងៃណាត់មើលដី៖</span><span>${visitDate}</span></div>
+                </div>
+            `;
+            document.getElementById('customModal').classList.remove('hidden');
+            this.reset();
+            populateBookingSelect();
+        });
+
+        // Mobile navigation toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Initialize Master Plan on page load
+        inspectPlot('A01');
+    </script>
+
+    <!-- ==================== FLOATING RUMDUOL FLOWERS OVERLAY (ផ្ការំដូលធ្លាក់ទូទាំងគេហទំព័រ) ==================== -->
+    <div id="rumduol-overlay" class="fixed inset-0 pointer-events-none z-30 overflow-hidden" aria-hidden="true"></div>
+
+    <script>
+        /* =========================================================================
+           4. FLOATING RUMDUOL FLOWERS OVERLAY ACROSS ENTIRE PAGE (ផ្ការំដូលធ្លាក់)
+           ========================================================================= */
+        (function initRumduolOverlay() {
+            const container = document.getElementById('rumduol-overlay');
+            if (!container) return;
+
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes rumduolFall {
+                    0% {
+                        transform: translate3d(0, -40px, 0) rotate(0deg);
+                        opacity: 0;
+                    }
+                    10% {
+                        opacity: 0.85;
+                    }
+                    50% {
+                        transform: translate3d(35px, 50vh, 0) rotate(180deg);
+                    }
+                    90% {
+                        opacity: 0.85;
+                    }
+                    100% {
+                        transform: translate3d(-25px, 105vh, 0) rotate(360deg);
+                        opacity: 0;
+                    }
+                }
+                .rumduol-petal {
+                    position: absolute;
+                    top: -40px;
+                    will-change: transform, opacity;
+                    animation-name: rumduolFall;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+            `;
+            document.head.appendChild(style);
+
+            const flowerSVG = `
+                <svg viewBox="0 0 100 100" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="khmerGoldPetal" x1="50" y1="4" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#FEF08A"/>
+                            <stop offset="55%" stop-color="#FDE047"/>
+                            <stop offset="100%" stop-color="#D97706"/>
+                        </linearGradient>
+                        <radialGradient id="khmerGoldCenter" cx="45%" cy="40%" r="55%">
+                            <stop offset="0%" stop-color="#FEF9C3"/>
+                            <stop offset="65%" stop-color="#FACC15"/>
+                            <stop offset="100%" stop-color="#B45309"/>
+                        </radialGradient>
+                    </defs>
+                    <!-- 4 Diagonal Corner Accents -->
+                    <rect x="20" y="20" width="16" height="16" rx="2" fill="#FACC15" opacity="0.85"/>
+                    <rect x="64" y="20" width="16" height="16" rx="2" fill="#FACC15" opacity="0.85"/>
+                    <rect x="64" y="64" width="16" height="16" rx="2" fill="#FACC15" opacity="0.85"/>
+                    <rect x="20" y="64" width="16" height="16" rx="2" fill="#FACC15" opacity="0.85"/>
+
+                    <!-- Top Petal -->
+                    <path d="M50 4 C33 20, 32 36, 50 46 C68 36, 67 20, 50 4 Z" fill="url(#khmerGoldPetal)" stroke="#CA8A04" stroke-width="1.2"/>
+                    <path d="M50 18 C42 27, 42 35, 50 41 C58 35, 58 27, 50 18 Z" fill="#FEF9C3" opacity="0.85"/>
+
+                    <!-- Right Petal -->
+                    <path d="M96 50 C80 33, 64 32, 54 50 C64 68, 80 67, 96 50 Z" fill="url(#khmerGoldPetal)" stroke="#CA8A04" stroke-width="1.2"/>
+                    <path d="M82 50 C73 42, 65 42, 59 50 C65 58, 73 58, 82 50 Z" fill="#FEF9C3" opacity="0.85"/>
+
+                    <!-- Bottom Petal -->
+                    <path d="M50 96 C67 80, 68 64, 50 54 C32 64, 33 80, 50 96 Z" fill="url(#khmerGoldPetal)" stroke="#CA8A04" stroke-width="1.2"/>
+                    <path d="M50 82 C58 73, 58 65, 50 59 C42 65, 42 73, 50 82 Z" fill="#FEF9C3" opacity="0.85"/>
+
+                    <!-- Left Petal -->
+                    <path d="M4 50 C20 67, 36 68, 46 50 C36 32, 20 33, 4 50 Z" fill="url(#khmerGoldPetal)" stroke="#CA8A04" stroke-width="1.2"/>
+                    <path d="M18 50 C27 58, 35 58, 41 50 C35 42, 27 42, 18 50 Z" fill="#FEF9C3" opacity="0.85"/>
+
+                    <!-- Center Medallion -->
+                    <circle cx="50" cy="50" r="14" fill="#B45309"/>
+                    <circle cx="50" cy="50" r="11" fill="url(#khmerGoldCenter)"/>
+                </svg>
+            `;
+
+            const count = 16;
+            for (let i = 0; i < count; i++) {
+                const el = document.createElement('div');
+                el.className = 'rumduol-petal';
+                const size = 18 + Math.random() * 14;
+                el.style.width = size + 'px';
+                el.style.height = size + 'px';
+                el.style.left = (Math.random() * 98) + '%';
+                el.style.animationDuration = (11 + Math.random() * 10) + 's';
+                el.style.animationDelay = (-Math.random() * 18) + 's';
+                el.innerHTML = flowerSVG;
+                container.appendChild(el);
+            }
+        })();
+
+    </script>
+
+    <script>
+        (function syncWithAdminPanel() {
+
+            const SETTINGS_KEY = 'skyworld_settings_v1';
+
+            // Apply Site Settings & Contact Info from Admin Panel
+            const savedSettings = JSON.parse(localStorage.getItem(SETTINGS_KEY) || 'null');
+            if (savedSettings) {
+                const setText = (id, val) => { const el = document.getElementById(id); if (el && val) el.textContent = val; };
+                setText('site-brand-title', savedSettings.brandTitle);
+                setText('site-brand-subtitle', savedSettings.brandSubtitle);
+                setText('hero-badge-text', savedSettings.heroBadge);
+                if (savedSettings.heroTitle) {
+                    const h1 = document.getElementById('hero-main-title');
+                    if (h1) h1.innerHTML = savedSettings.heroTitle;
+                }
+                setText('hero-description', savedSettings.heroDesc);
+                setText('hero-start-price', savedSettings.startPrice);
+                setText('hero-sizes', savedSettings.heroSizes);
+                setText('hero-installment', savedSettings.installmentText);
+                setText('stat-road-width', savedSettings.roadWidth);
+                setText('stat-title-deed', savedSettings.titleDeed);
+                setText('contact-phones', savedSettings.phones);
+                setText('contact-telegram-handle', savedSettings.telegramHandle);
+                setText('contact-address', savedSettings.address);
+                setText('contact-hours', savedSettings.hours);
+
+                if (savedSettings.telegramUrl) {
+                    document.querySelectorAll('a[href="https://t.me/"]').forEach(a => a.href = savedSettings.telegramUrl);
+                }
+                if (savedSettings.mapsUrl) {
+                    document.querySelectorAll('a[href*="maps.app.goo.gl"]').forEach(a => a.href = savedSettings.mapsUrl);
+                }
+                if (savedSettings.showFlowers === false) {
+                    const ov = document.getElementById('rumduol-overlay');
+                    if (ov) ov.style.display = 'none';
+                }
+            }
+            const PLOTS_KEY = 'skyworld_plots_v1';
+            const GALLERY_KEY = 'skyworld_gallery_v1';
+            const BOOKINGS_KEY = 'skyworld_bookings_v1';
+
+            // Load persisted plots if available
+            if (typeof landPlots !== 'undefined') {
+                const savedPlots = localStorage.getItem(PLOTS_KEY);
+                if (savedPlots) {
+                    try {
+                        const parsed = JSON.parse(savedPlots);
+                        if (Array.isArray(parsed) && parsed.length > 0) {
+                            landPlots.length = 0;
+                            parsed.forEach(p => landPlots.push(p));
+                            if (typeof inspectPlot === 'function') inspectPlot(landPlots[0].id);
+                        }
+                    } catch (e) {}
+                } else {
+                    localStorage.setItem(PLOTS_KEY, JSON.stringify(landPlots));
+                }
+
+                const origInspect = window.inspectPlot;
+                if (typeof origInspect === 'function') {
+                    window.inspectPlot = function(id) {
+                        origInspect(id);
+                        localStorage.setItem(PLOTS_KEY, JSON.stringify(landPlots));
+                    };
+                }
+            }
+
+            // Render custom uploaded gallery photos from Admin Panel
+            const galGrid = document.querySelector('#gallery .grid');
+            const savedGallery = JSON.parse(localStorage.getItem(GALLERY_KEY) || '[]');
+            if (galGrid && Array.isArray(savedGallery) && savedGallery.length > 0) {
+                savedGallery.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'gallery-item rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 group cursor-pointer';
+                    card.dataset.category = item.category || 'site';
+                    card.onclick = function() { if (typeof openImageModal === 'function') openImageModal(this); };
+                    card.innerHTML = `
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-royal-navy/85 text-royal-gold text-xs font-semibold backdrop-blur-sm">${item.badge || 'រូបភាពថ្មី'}</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-royal-navy">${item.title}</h4>
+                            <p class="text-xs text-slate-500 mt-1">${item.desc || ''}</p>
+                        </div>
+                    `;
+                    galGrid.appendChild(card);
+                });
+            }
+
+            // Save submitted bookings into localStorage for Admin Panel
+            const form = document.getElementById('landBookingForm');
+            if (form) {
+                form.addEventListener('submit', function() {
+                    setTimeout(() => {
+                        const bookings = JSON.parse(localStorage.getItem(BOOKINGS_KEY) || '[]');
+                        const nameEl = document.getElementById('guestName');
+                        const phoneEl = document.getElementById('guestPhone');
+                        const plotEl = document.getElementById('selectedPlotInput');
+                        const payEl = document.getElementById('paymentMethod');
+                        const dateEl = document.getElementById('visitDate');
+                        if (nameEl && phoneEl && plotEl) {
+                            bookings.unshift({
+                                id: 'BK-' + Math.floor(1000 + Math.random() * 9000),
+                                name: nameEl.value,
+                                phone: phoneEl.value,
+                                plotId: plotEl.value,
+                                payment: payEl ? payEl.value : '',
+                                date: dateEl ? dateEl.value : '',
+                                time: new Date().toLocaleString('km-KH')
+                            });
+                            localStorage.setItem(BOOKINGS_KEY, JSON.stringify(bookings));
+                        }
+                        if (typeof landPlots !== 'undefined') {
+                            localStorage.setItem(PLOTS_KEY, JSON.stringify(landPlots));
+                        }
+                    }, 50);
+                }, true);
+            }
+        })();
+    </script>
+</body>
+</html>
